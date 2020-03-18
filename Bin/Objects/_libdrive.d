@@ -28,3 +28,4 @@
 .\objects\_libdrive.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
 .\objects\_libdrive.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
 .\objects\_libdrive.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\objects\_libdrive.o: ..\User\Lib\GlobalData.h

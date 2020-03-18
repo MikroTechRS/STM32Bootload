@@ -30,3 +30,4 @@
 .\objects\main.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
 .\objects\main.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\objects\main.o: ..\User\Lib\_LibDrive.h
+.\objects\main.o: ..\User\Lib\GlobalData.h

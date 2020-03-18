@@ -3,13 +3,16 @@
 
 #include "mcu_ini.h"   
 #include "_LibDrive.h"  
-//#include "stm32f4xx.h"                  // Device header
+#include "GlobalData.h" 
+
 
 #define RED_ON()  GPIO_SetBits(GPIOC,GPIO_Pin_13)
 #define RED_OFF() GPIO_ResetBits(GPIOC,GPIO_Pin_13)
 #define DELAY     500
 
 #endif
+
+
 
 
 /*
@@ -155,7 +158,29 @@ int main(void)
 		delay_ms(500);
 */
 
+/*
+define symbol _ICFEDIT_region_RAM_start_          = 0x20000000;
+define symbol _ICFEDIT_region_RAM_end_            = 0x20017FFF;
+#pragma location= 0x20017BFF
+__no_init  uint8_t my_arr[1024];
 
+
+MEMORY
+{
+RAM (xrw) : ORIGIN = 0x20000000, LENGTH = 112K
+AUX (xrw) : ORIGIN = 0x2001C000, LENGTH = 16K
+VECTOR (rx) : ORIGIN = 0x8000000, LENGTH = 16K
+EEPROM (rx) : ORIGIN = 0x8004000, LENGTH = 16K
+FLASH (rx) : ORIGIN = 0x8008000, LENGTH = 1M-32K
+CCM (xrw) : ORIGIN = 0x10000000, LENGTH = 64K 
+}
+
+auto, register, static extern
+
+
+
+
+*/
 
 
 

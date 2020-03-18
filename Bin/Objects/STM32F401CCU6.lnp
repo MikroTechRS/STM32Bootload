@@ -2,6 +2,7 @@
 ".\objects\main.o"
 ".\objects\_libdrive.o"
 ".\objects\mcu_ini.o"
+".\objects\globaldata.o"
 ".\objects\misc.o"
 ".\objects\stm32f4xx_adc.o"
 ".\objects\stm32f4xx_can.o"
