@@ -40,6 +40,13 @@ extern int32_t  Timer31;
 extern int32_t  Timer32;
 
 
+
+
+
+#define CONST_ADDR_EEPROM 0x08002000  
+extern const int32_t  addrEEPROM;
+
+
 #endif
 
 

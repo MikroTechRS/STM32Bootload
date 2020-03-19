@@ -39,5 +39,9 @@ int32_t  Timer31  __attribute__((at(ADRESS_TIMERS+4*30)));
 int32_t  Timer32  __attribute__((at(ADRESS_TIMERS+4*31)));
 
 
+const int32_t  addrEEPROM __attribute__((at(CONST_ADDR_EEPROM))) =0x66AA55DD;
 
+	void (*aproceder)(void);
 
+		
+		

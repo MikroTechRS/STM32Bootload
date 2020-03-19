@@ -31,3 +31,4 @@
 .\objects\main.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\objects\main.o: ..\User\Lib\_LibDrive.h
 .\objects\main.o: ..\User\Lib\GlobalData.h
+.\objects\main.o: ..\User\Lib\ILI9488.h
