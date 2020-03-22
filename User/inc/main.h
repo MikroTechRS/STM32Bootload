@@ -5,6 +5,7 @@
 #include "_LibDrive.h"  
 #include "GlobalData.h" 
 #include "ILI9488.h" 
+#include "LibFunction.h"  
 
 
 #define RED_ON()  GPIO_SetBits(GPIOC,GPIO_Pin_13)
@@ -19,20 +20,20 @@
 
 
 /*
-char         	       8	  -128 … 127
-unsigned char	       8	  0 … 255
-short               16	  -32 768 … 32767
-unsigned short      16	  0 … 65535
-int                 32	  -2 147 483 648 … 2 147 483 647
-unsigned int        32	  0 … 4 294 967 295
-long	              32	  -2 147 483 648 … 2 147 483 647
-unsigned long	      32	  0 … 4 294 967 295
-long long           64	  -9 223 372 036 854 775 808 …9 223 372 036 854 775 807
-unsigned long long	64  	0 … 18 446 744 073 709 551 615
+char         	       8	  -128 .. 127
+unsigned char	       8	  0 .. 255
+short               16	  -32 768 .. 32767
+unsigned short      16	  0 .. 65535
+int                 32	  -2 147 483 648 .. 2 147 483 647
+unsigned int        32	  0 .. 4 294 967 295
+long	              32	  -2 147 483 648 .. 2 147 483 647
+unsigned long	      32	  0 .. 4 294 967 295
+long long           64	  -9 223 372 036 854 775 808 .. 9 223 372 036 854 775 807
+unsigned long long	64  	0 .. 18 446 744 073 709 551 615
 
-float             	32	  -2 147 483 648.0 … 2 147 483 647.0
-double	            64	  -9 223 372 036 854 775 808 .0 …9 223 372 036 854 775 807.0
-long double         64	  -9 223 372 036 854 775 808 .0 …9 223 372 036 854 775 807.0
+float             	32	  -2 147 483 648.0 .. 2 147 483 647.0
+double	            64	  -9 223 372 036 854 775 808 .0 .. 9 223 372 036 854 775 807.0
+long double         64	  -9 223 372 036 854 775 808 .0 .. 9 223 372 036 854 775 807.0
 */
 
 

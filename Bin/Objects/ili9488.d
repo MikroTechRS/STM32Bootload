@@ -29,3 +29,4 @@
 .\objects\ili9488.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
 .\objects\ili9488.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\objects\ili9488.o: ..\User\Lib\_LibDrive.h
+.\objects\ili9488.o: ..\User\Lib\_Font_8x16.h

@@ -32,3 +32,4 @@
 .\objects\main.o: ..\User\Lib\_LibDrive.h
 .\objects\main.o: ..\User\Lib\GlobalData.h
 .\objects\main.o: ..\User\Lib\ILI9488.h
+.\objects\main.o: ..\User\Lib\LibFunction.h

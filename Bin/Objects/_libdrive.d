@@ -1,5 +1,5 @@
 .\objects\_libdrive.o: ..\User\Lib\_LibDrive.c
-.\objects\_libdrive.o: ..\User\Lib\_LibDrive.h
+.\objects\_libdrive.o: ..\User\Lib\GlobalData.h
 .\objects\_libdrive.o: ..\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\_libdrive.o: ..\CMSIS\Include\core_cm4.h
 .\objects\_libdrive.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -28,4 +28,3 @@
 .\objects\_libdrive.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
 .\objects\_libdrive.o: ..\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
 .\objects\_libdrive.o: ..\STM32F4xx_StdPeriph_Driver\inc\misc.h
-.\objects\_libdrive.o: ..\User\Lib\GlobalData.h

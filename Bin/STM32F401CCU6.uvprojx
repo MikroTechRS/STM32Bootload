@@ -407,6 +407,16 @@
               <FileType>1</FileType>
               <FilePath>..\User\Lib\ILI9488.c</FilePath>
             </File>
+            <File>
+              <FileName>_Font_8x16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Lib\_Font_8x16.c</FilePath>
+            </File>
+            <File>
+              <FileName>LibFunction.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Lib\LibFunction.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

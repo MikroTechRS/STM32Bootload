@@ -4,6 +4,8 @@
 ".\objects\mcu_ini.o"
 ".\objects\globaldata.o"
 ".\objects\ili9488.o"
+".\objects\_font_8x16.o"
+".\objects\libfunction.o"
 ".\objects\misc.o"
 ".\objects\stm32f4xx_adc.o"
 ".\objects\stm32f4xx_can.o"

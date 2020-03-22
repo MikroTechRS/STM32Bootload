@@ -1,23 +1,11 @@
-#include "main.h"  
+#include "main.h"   
 
- void LedBlink(void) 
-{
-  RED_ON();          	
-  delay_ms(500);
-  RED_OFF();           	
-  delay_ms(500);		
-  RED_ON();          	
-  delay_ms(500);
-  RED_OFF();           	
-  delay_ms(500);
-	RED_ON();
-}
+char message[] = {"zerÌ„Â„ÂÍ„ÍÌwgfd"};
 
 int main(void)
 {	
   LEDsini();	
-	_InitDrive();	
-  
+	_InitDrive();	  
 	
 	ILI9488_ini();
 	
@@ -28,9 +16,22 @@ int main(void)
   Rectangle(0xFF00,10,10,470,310);
   Rectangle(0x0FF0,10,10,470,310);
   Rectangle(0x00FF,10,10,470,310);
+	Rectangle(0xFFFF, 0, 0,479,319);
+  Rectangle(0x0000, 1, 1,478,318);                       
+  Rectangle(0x03E0,10,10,470,310);	
 	
-	LedBlink();
-	
+	TFT_Color= 0xFFFF;                               
+	TFT_Fon  = 0x0000;
+
+  char Text1[50]= "12345678";
+  Write_Text(Text1,250,20);	
+  strcpy("34567",Text1);
+  Write_Text(Text1,250,40);
+
+	Write_Text(message,20,20);	
+	Write_Text("message",20,40);	
+
+  int xVal=0xFFFF;	
 	int pLed=0;
 	uint32_t _Color=0x00FF;
 	while(1)
@@ -47,11 +48,12 @@ int main(void)
 		  	 Timer2=1000;
 		  }			
 	  }		
-	 Rectangle(_Color,10,10,470,310);
+  	Rectangle(_Color,10,100,470,310);		
 		
-	if(_Color==0x0000)_Color=0x000F;	
-	_Color=_Color<<1;	
+    uInt16ToText(xVal++, Text1);
+	  Write_Text(Text1,250,60);	
 		
+	  _Color++;
   }			
 }	
 	
